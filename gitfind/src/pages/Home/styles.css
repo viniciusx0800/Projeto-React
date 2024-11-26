@@ -10,10 +10,12 @@
 }
 
 .github{
-    height: 50vh ;
-    position: absolute;
-    left: 0;
-    overflow: hidden;
+    height: 900px;
+    left: 0px;
+    top: 25px;
+    margin: 0px;
+    padding-left: 0px;
+
 }
 
 .info{
@@ -24,6 +26,7 @@
 }
 
 input{
+    color: #FFFFFF;
     border: 1px solid #999999;
     border-radius: 22px;
     min-width: 250px;
