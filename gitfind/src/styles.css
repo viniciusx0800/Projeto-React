@@ -5,7 +5,8 @@
 }
 
 body{
-    background-color: #1D2128;
+    background-color: #252627;
+    min-width: 320px;
 }
 
 hr{
