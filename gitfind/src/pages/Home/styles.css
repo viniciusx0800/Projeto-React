@@ -1,20 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #161515;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
 
 .conteudo{
     position: relative;
 
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
 }
 
 .github{
-    height: 900px;
-    left: 0px;
-    top: 25px;
-    margin: 0px;
-    padding-left: 0px;
+    height: auto;
+    margin: 0 auto 20px;
+    max-width: 100%;
 
 }
 
@@ -22,28 +27,29 @@
     width: 60%;
     margin-right:90px;
     margin-top: 40px;
-    color: #FFFFFF;
+    color: #2d3d4d;
 }
 
 input{
-    color: #FFFFFF;
-    border: 1px solid #999999;
+    color: #edeff3;
+    border: 1px solid #46df80;
     border-radius: 22px;
-    min-width: 250px;
+    min-width: 100px;
     margin-right: 12px;
-    width: 80%;
-    background-color: transparent;
+    width: auto;
+    background-color: rgb(39, 60, 87);
     font-size: 18px;
     padding: 10px;
 }
 
 button{
-    border: 1px solid #999999;
+    border: 1px solid #73d470;
     border-radius: 22px;
-    background-color: #2D333B;
-    color: #FFFFFF;
+    background-color: #264574;
+    color: #b6bcc7;
     font-size: 18px;
     padding: 10px;
+    margin: 10px;
 }
 
 .perfil{
@@ -85,4 +91,178 @@ button{
     color: #FFFFFF;
     margin: 12px 0 ;
     text-align: center;
+} */
+
+/* Importando a fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Corpo geral da aplicação */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Estilo para o conteúdo principal */
+.conteudo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+}
+
+/* Imagem do Github */
+/* .github {
+  height: auto;
+  max-width: 100%;
+  margin: 0 auto 20px;
+} */
+
+/* Estilo da área de informações */
+.info {
+  width: 60%;
+  max-width: 900px;
+  margin: 0px;
+  color: #FFFFFF;
+  background-color: #333333;
+  padding: 40px;
+  border-radius: 1px;
+  box-shadow: 0 4px 8px rgba(175, 50, 50, 0.1);
+}
+
+/* Estilo do campo de input */
+input{
+    color: #edeff3;
+    border: 1px solid #46df80;
+    border-radius: 22px;
+    min-width: 250px;
+    margin-right: 12px;
+    width: 60px;
+    background-color: rgb(39, 60, 87);
+    font-size: 18px;
+    padding: 10px;
+    cursor: text;
+}
+
+
+/* Estilo do botão */
+button {
+  border: 1px solid #72e27b;
+  border-radius: 22px;
+  background-color: #2a3d57;
+  color: #615b5b;
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #68d69f;
+}
+
+/* Estilo do perfil */
+.perfil {
+  display: flex;
+  align-items: center;
+  margin: 40px 0;
+  flex-wrap: wrap; /* Permite que o conteúdo se ajuste em telas pequenas */
+}
+
+.profile {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  border: 2px solid #E5E5E5;
+  margin-right: 32px;
+}
+
+.perfil h3 {
+  color: #999999;
+  font-size: 24px;
+  margin: 0;
+}
+
+.perfil span {
+  display: block;
+  color: #999999;
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.perfil p {
+  color: #999999;
+  font-size: 12px;
+  margin: 20px 0 0 0;
+}
+
+/* Título de Repositórios */
+.repositorio {
+  font-size: 32px;
+  color: #FFFFFF;
+  margin: 12px 0;
+  text-align: center;
+}
+
+/* Responsividade com Media Queries */
+
+/* Para dispositivos móveis e telas pequenas (até 768px) */
+@media (max-width: 768px) {
+  .conteudo {
+    padding: 10px;
+  }
+
+  /* Ajustando o tamanho da imagem */
+  .github {
+    height: 200px;
+    max-width: 80%;
+  }
+
+  /* Ajustando a largura do input e do botão */
+  input {
+    width: 100%;
+    margin-bottom: 10px; /* Espacamento entre o input e o botão */
+  }
+
+  button {
+    width: 100%;
+  }
+
+  /* Ajustando o perfil para layout de coluna */
+  .perfil {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile {
+    margin-bottom: 10px; /* Espacamento entre imagem e o nome */
+  }
+
+  h3 {
+    font-size: 20px; /* Ajuste para telas menores */
+  }
+
+  .repositorio {
+    font-size: 28px; /* Ajustando o tamanho do título */
+  }
+}
+
+/* Para tablets (de 769px a 1024px) */
+@media (max-width: 1024px) {
+  .info {
+    width: 80%;
+  }
+
+  input, button {
+    width: 100%;
+  }
+
+  /* Ajuste do tamanho da imagem */
+  .github {
+    width: 300px;
+  }
 }
